@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+}
+
+/*顶部菜单栏*/
+#top-menu{
+    width: 100%;
+    height: 50px;
+    background-color: #576574;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+    z-index: 100;
+    /*阴影效果*/
+    border: #b9bbbe 1px solid;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+    box-shadow:2px 2px 10px #909090;
+}
+
+/*按钮*/
+.btn {
+    background-color: #ecf0f1;
+    border: none;
+    color: black;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.add-btn{
+    background-color: #78C3F3;
+    color: white;
+}
+.close-btn{
+    background-color: #d63031;
+    color: white;
+}
+.green-btn{
+    background-color: #27ae60;
+    color: white;
+}
+/*小按钮*/
+.small-btn{
+    background-color: #ecf0f1;
+    border: none;
+    color: black;
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.small-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*input 输入框*/
+input[type="text"]{
+    box-sizing: border-box;
+    text-align:center;
+    font-size:1em;
+    height: 34px;
+    border-radius:4px;
+    border:1px solid #c8cccf;
+    color:#6a6f77;
+    -web-kit-appearance:none;
+    -moz-appearance: none;
+    outline:0;
+    padding:0 1em;
+    text-decoration:none;
+    display: inline;
+    width:260px;
+}
+input[type="text"]:focus{
+    border:1px solid cornflowerblue;
+}
+
+/*文件上传*/
+.uploadDiv{
+    top: 20px;
+    left: 200px;
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    background-color: #ecf0f1;
+    text-align: center;
+    color: black;
+    padding: 8px 30px;
+    border: #78C3F3 solid 1px;
+    border-radius: 4px;
+}
+.file{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/*右击显示的弹出框*/
+.click-menu {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    z-index: 1000;
+    background-color: white;
+    border: #b9bbbe 1px solid;
+    border-radius: 5px;
+    /*阴影效果*/
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+    box-shadow:2px 2px 10px #909090;
+}
+.click-menu:hover{
+    cursor: pointer;
+}
+.right-click-menu-inner{
+    padding: 10px;
+    width: 131px;
+    height: 30px;
+}
+.right-click-menu-inner:hover{
+    cursor: pointer;
+    background-color: #b9bbbe;
+}
+.right-click-menu-inner a:link{
+    color: black;
+}
+.right-click-menu-inner a:visited{
+    color: black;
+}
+.right-click-menu-inner a{
+    text-decoration: none;
+}
+
+/*信息显示框*/
+#input-menu{
+    text-align: center;
+    background-color: #576574;
+    padding: 10px;
+    color: white;
+}
+
+#delete-menu{
+    text-align: center;
+    background-color: #576574;
+    padding: 10px;
+    color: white;
+}
+
+#update-menu{
+    text-align: center;
+    background-color: #576574;
+    padding: 10px;
+    color: white;
+}
+
+.fullHide{
+    position: absolute;
+    background-color: rgba(99, 110, 114, 0.6);
+    width: 100%;
+    height: 700px;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+}

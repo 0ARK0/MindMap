@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mind map</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="data.js"></script>
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="echarts4.7.min.js"></script>
+</head>
+<body>
+
+<div id="top-menu">
+    <span style="left: 250px;position: relative;">
+        <input id="searchInput" type="text" placeholder="搜索内容">
+        <button class="btn" id="searchBtn" onclick="searchData()">搜索</button>
+    </span>
+    <button class="btn" style="left: 350px;position: relative;" onclick="reshowChart()">还原</button>
+    <span style="left: 450px;position: relative;">
+        <button class="btn" onclick="">保存图表</button>
+    </span>
+    <span style="left: 550px;position: relative;">
+        <button class="btn" onclick="changeChartColor()">换肤</button>
+    </span>
+</div>
+
+
+<div id="main" style="top:60px;width: 100%;height: 640px"></div>
+
+<div id="right-click-menu" class="click-menu">
+    <div class="right-click-menu-inner" onclick="addNode()">新增</div>
+    <div class="right-click-menu-inner" onclick="updateNode()">编辑</div>
+    <div class="right-click-menu-inner" onclick="deleteNode()">删除</div>
+</div>
+
+<div id="input-menu" class="small-menu click-menu" style="width:150px;height:80px;">
+    <input id="newNodeName" type="text" placeholder="名称" style="width: 140px;" onkeypress="bindEnterByAddMenu()">
+    <p></p>
+    <button id="add-menu-ybtn" class="small-btn" onclick="addNodeConfirm(true)">确认</button> &nbsp;&nbsp;&nbsp;
+    <button class="small-btn" onclick="addNodeConfirm(false)">取消</button>
+</div>
+
+<div id="delete-menu" class="small-menu click-menu" style="width: 150px;height: 100px;">
+    <p>确认删除吗？</p>
+    <button class="small-btn" onclick="deleteNodeConfirm(true)">确认</button> &nbsp;&nbsp;&nbsp;
+    <button class="small-btn" onclick="deleteNodeConfirm(false)">取消</button>
+</div>
+
+<div id="update-menu" class="small-menu click-menu" style="width: 150px;height: 80px;">
+    <input id="newNodeName2" type="text" placeholder="新的名称" style="width: 140px;" onkeypress="bindEnterByUpdateMenu()">
+    <p></p>
+    <button id="update-menu-ybtn" class="small-btn" onclick="updateNodeConfirm(true)">确认</button>&nbsp;&nbsp;&nbsp;
+    <button class="small-btn" onclick="updateNodeConfirm(false)">取消</button>
+</div>
+
+<div class="fullHide"></div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
