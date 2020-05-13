@@ -10,17 +10,20 @@
 <body>
 
 <div id="top-menu">
-    <span style="left: 250px;position: relative;">
+    <img src="../img/logo.png" style="position: absolute;top:0;left: 0;" width="250px" height="70px">
+    <div class="top-item-first">
         <input id="searchInput" type="text" placeholder="搜索内容">
         <button class="btn" id="searchBtn" onclick="searchData()">搜索</button>
-    </span>
-    <button class="btn" style="left: 350px;position: relative;" onclick="reshowChart()">还原</button>
-    <span style="left: 450px;position: relative;">
+    </div>
+    <div class="top-item">
+        <button class="btn" onclick="reshowChart()">还原</button>
+    </div>
+    <div class="top-item">
         <button class="btn" onclick="">保存图表</button>
-    </span>
-    <span style="left: 550px;position: relative;">
+    </div>
+    <div class="top-item">
         <button class="btn" onclick="changeChartColor()">换肤</button>
-    </span>
+    </div>
 </div>
 
 

@@ -19,6 +19,14 @@ body{
     -webkit-box-shadow: 2px 2px 10px #909090;
     box-shadow:2px 2px 10px #909090;
 }
+.top-item-first{
+    float: left;
+    margin-left: 270px;
+}
+.top-item{
+    float: left;
+    margin-left: 100px;
+}
 
 /*按钮*/
 .btn {
